@@ -1,7 +1,8 @@
 import AppLogo from "@/components/shared/app-logo";
 import { lusitnan } from "@/components/shared/fonts";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { faCheck, faCircle, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faCircle, faCircleCheck, faDrawPolygon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,7 +63,78 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <div className="grid grid-rows-2 grid-cols-2">
+            <div className=" p-[18px] mb-[20px] shadow-lg rounded-xl">
+              <img className="w-[30%] bg-white p-4 rounded-lg" src="img/speech-bubble.png" alt="ticket" />
+              <div className="">
+                <h4>Ticket manage</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, delectus.</p>
+              </div>
+            </div>
+            <div className=" p-[18px] mb-[20px] shadow-lg rounded-xl">
+              <img className="w-[30%] bg-white p-4 rounded-lg" src="img/ticket.png" alt="ticket" />
+              <div className="">
+                <h4>Ticket manage</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, delectus.</p>
+              </div>
+            </div>
+            <div className=" p-[18px] mb-[20px] shadow-lg rounded-xl">
+              <img className="w-[30%] bg-white p-4 rounded-lg" src="img/file.png" alt="ticket" />
+              <div className="">
+                <h4>Ticket manage</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, delectus.</p>
+              </div>
+            </div>
+            <div className=" p-[18px] mb-[20px] shadow-lg rounded-xl">
+              <img className="w-[30%] bg-white p-4 rounded-lg" src="img/email.png" alt="ticket" />
+              <div className="">
+                <h4>Ticket manage</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, delectus.</p>
+              </div>
+            </div>
+          </div>
         </div>
+        {/* why choose us */}
+        <div className="font-[inter] flex flex-col items-center justify-center bg-green-300">
+          <h5 className="text-blue-400">Our features</h5>
+          <h3 className="text-lg capitalize font-[inter] font-bold">Why choose us</h3>
+        </div>
+
+        <div className="">
+          <div className="flex flex-row">
+            <div className="bg-green-200 p-4 shadow-orange-200 mb-4 w-[96%] border-spacing-2 border-green-200">
+              <Card>
+                <CardHeader>
+                  <CardTitle><FontAwesomeIcon icon={faDrawPolygon} /></CardTitle>
+                  <CardDescription>Drag and Drop</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </CardContent>
+                <CardFooter>
+                  <p className="bg-slate-200">Read more</p>
+                </CardFooter>
+              </Card>
+
+            </div>
+            <div className="bg-green-200 p-4 shadow-orange-200 mb-4 w-[96%] border-spacing-2 border-green-200">
+              dfas
+            </div>
+            <div className="bg-green-200 p-4 shadow-orange-200 mb-4 w-[96%] border-spacing-2 border-green-200">
+              dfas
+            </div>
+            <div className="bg-green-200 p-4 shadow-orange-200 mb-4 w-[96%] border-spacing-2 border-green-200">
+              dfas
+            </div>
+            <div className="bg-green-200 p-4 shadow-orange-200 mb-4 w-[96%] border-spacing-2 border-green-200">
+              dfas
+            </div>
+            <div className="bg-green-200 p-4 shadow-orange-200 mb-4 w-[96%] border-spacing-2 border-green-200">
+              dfas
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
   );
